@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Form Pendaftaran</h1>
+    <p>Isi data berikut untuk mendaftar.</p>
+
+    <form method="get" action="detail.html">
+      <div class="field">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+      </div>
+
+      <div class="field">
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" name="nim" placeholder="Contoh: 119140008">
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="nama@email.com">
+      </div>
+
+      <div class="field">
+        <label for="tgl">Tanggal Lahir</label>
+        <input type="date" id="tgl" name="tgl_lahir">
+      </div>
+
+      <fieldset class="pilihan">
+        <legend>Jenis Kelamin</legend>
+        <label for="laki"><input type="radio" id="laki" name="gender" value="laki-laki"> Laki-laki</label>
+        <label for="perempuan"><input type="radio" id="perempuan" name="gender" value="perempuan"> Perempuan</label>
+      </fieldset>
+
+      <div class="field">
+        <label for="prodi">Program Studi</label>
+        <select id="prodi" name="prodi">
+          <option value="">Pilih program studi</option>
+          <option value="Teknik Informatika">Teknik Informatika</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Teknik Elektro">Teknik Elektro</option>
+        </select>
+      </div>
+
+      <fieldset class="pilihan">
+        <legend>Minat</legend>
+        <label for="web"><input type="checkbox" id="web" name="minat" value="Web"> Web</label>
+        <label for="mobile"><input type="checkbox" id="mobile" name="minat" value="Mobile"> Mobile</label>
+        <label for="data"><input type="checkbox" id="data" name="minat" value="Data"> Data</label>
+      </fieldset>
+
+      <div class="field">
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat"></textarea>
+      </div>
+
+      <button type="submit" id="tombol-daftar">Daftar</button>
+    </form>
+  </div>
+</body>
+</html>

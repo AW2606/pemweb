@@ -1,0 +1,150 @@
+/* Selector elemen */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #222;
+  background-color: #f4f5f7;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 22px;
+}
+
+p {
+  margin: 0 0 20px;
+  color: #666;
+}
+
+/* Selector class: box */
+.box {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 28px;
+  background-color: #fff;
+  border: 1px solid #d9dce1;
+  border-radius: 6px;
+}
+
+.box-lebar {
+  max-width: 640px;
+}
+
+/* Form */
+.field {
+  margin-bottom: 16px;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+fieldset {
+  margin: 0 0 16px;
+  padding: 0;
+  border: none;
+}
+
+.pilihan label {
+  display: inline-block;
+  margin-right: 16px;
+  font-weight: normal;
+}
+
+/* Selector atribut */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 9px 10px;
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid #c5c9d0;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Selector pseudo-class */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2f5fa7;
+}
+
+/* Selector id */
+#tombol-daftar,
+#tombol-kembali {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #fff;
+  text-decoration: none;
+  background-color: #2f5fa7;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#tombol-daftar:hover,
+#tombol-kembali:hover {
+  background-color: #244a85;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  text-align: left;
+  border: 1px solid #d9dce1;
+}
+
+th {
+  width: 35%;
+  background-color: #eef0f3;
+}
+
+tr:nth-child(even) td {
+  background-color: #fafbfc;
+}
+
+/* Catatan query string */
+.catatan {
+  margin-bottom: 24px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #444;
+  background-color: #eef0f3;
+  border-left: 3px solid #2f5fa7;
+}
+
+.catatan code {
+  display: block;
+  margin-top: 6px;
+  font-family: Consolas, monospace;
+  word-break: break-all;
+}
